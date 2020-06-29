@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- title为变量 是模块的名字 -->
+  <title>采购申请单</title>
+  <script>
+    window.coolLocals={}
+      window.extraJsons = ['dtlTable.json']
+    </script>
+  <!-- <script src="../../scripts/cool-master/cool-master.js"></script> -->
+  <script src="/settings.js"></script>
+</head>
+
+<body>
+  <div id="root" v-cloak>
+    <!--cool-master-view  cool-master-dialog  组件为固定组件 需模板生成-->
+    <cool-master-view ref="masterView" :unique-deploy-key="uniqueDeployKey" :axios-setting="axiosSetting" :dialogs="dialogs" :show-mode-list="showModeList" :is-methods="isMethods" @table-row-click="tableRowClick" @table-row-dblclick="tableRowDblclick"
+      @table-selection-change="tableSelectionChange" @pagination-size-change="paginationSizeChange" @pagination-current-change="paginationCurrentChange" @get-condition="getCondition" @custom-new="customNew" @custom-edit="customEdit" @button-click="buttonClick"
+      @save-event="dialogSaveEvent" @back-event="dialogBackEvent" @table-select-change="tableSelectionChange" @audit="audit" @check="check" :the-rest-params="theRestParams" ></cool-master-view>
+    <!--  <cool-master-dialog :unique-key="uniqueKey" :visible.sync="dialogVisible" :is-methods="isDialogMethods" @update-form="updateForm" @save-event="saveEvent"></cool-master-dialog> -->
+    <el-dialog ref="editDialog" :title="editDialogTitle" :visible.sync="dialogVisible" :close-on-click-modal="false" @close="backEvent" width="1200px">
+      <div style="border:1px solid #DCDFE6">
+        <div style="margin-bottom:15px">
+          <span style="font-size:16px;vertical-align: middle;font-weight:bold;margin-left: 15px">详细信息</span>
+          <cool-form-view ref="coolForm" :form-items="applyFormItems" size="mini" :inline="true" :label-width="labelWidth" @update-form="masterUpdateForm" @input-button-event="inputButtonEvent"></cool-form-view>
+        </div>
+        <el-tabs type="border-card">
+          <el-tab-pane label="明细列表">
+            <cool-button-group :buttons="buttons" @button-click="buttonClick"></cool-button-group>
+            <cool-table-view ref="tableView" :columns="columns" :data="inTableData" :height="tableHeight" @table-row-click="outRowClick" @table-selection-change="outSelection" :stripe="stripe" @table-row-dblclick="rowDblclick"></cool-table-view>
+          </el-tab-pane>
+        </el-tabs>
+      </div>
+      <div slot="footer">
+        <cool-save-button save-btn-text="保 存" back-btn-text="取 消" :save-btn-disabled="isCheck" @save-event="saveEvent" @back-event="backEvent"></cool-save-button>
+      </div>
+    </el-dialog>
+    <cool-quick-edit ref="quickEdit" :visible.sync="quickDialogVisible" :form-items="quickCoolFormItems" :width="dialogWidth" :label-width="labelWidth" :all-data="tableData" :current-edit-data="currentEditData" />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{
+  "buttons":[{
+        "text": "查询",
+        "size": "mini",
+        "icon": "#iconchaxun",
+        "disabled": false,
+        "controlDisable":"",
+        "key": "query"
+      },{
+        "text": "查看",
+        "size": "mini",
+        "icon": "#iconchakan",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "check"
+      },
+      {
+        "text": "新增",
+        "size": "mini",
+        "icon": "#iconxinzeng",
+        "disabled": false,
+        "controlDisable":"",
+        "key": "custom-new"
+      },
+      {
+        "text": "编辑",
+        "size": "mini",
+        "icon": "#iconERP_bianji",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "custom-edit"
+      },
+      {
+        "text": "删除",
+        "size": "mini",
+        "icon": "#iconERP_shanchu",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "delete"
+      },
+      {
+        "text": "审核",
+        "size": "mini",
+        "icon": "#iconshenhe",
+        "disabled": true,
+        "controlDisable":"single",
+        "key":"audit"
+      }
+      ]
+}

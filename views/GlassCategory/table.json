@@ -1,0 +1,49 @@
+{
+	"singleTableData":{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "selection"
+        },
+        {
+          "prop": "projectName",
+          "label": "项目名称"
+        },
+        {
+          "prop": "name",
+          "label": "品类名称"
+        }
+        ,{
+          "prop": "categoryReferred",
+          "label": "品类简称"
+        }
+        ,
+        {
+          "prop": "supplierName",
+          "label": "供应商"
+        }
+        ,{
+          "prop": "width",
+          "label": "最大尺寸(宽)"
+        }
+        ,
+        {
+          "prop": "height",
+          "label": "最大尺寸(高)"
+        }
+        ,
+        {
+          "prop": "price",
+          "label": "单价",
+          "formatterName":"showPrice"
+        }
+        ]
+        }
+  
+}

@@ -1,0 +1,46 @@
+{
+	"dtlTableData":[{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "selection"
+        },
+        {
+          "prop": "sn",
+          "label": "单号"
+        }
+        ,
+        {
+          "prop": "formno",
+          "label": "父单号"
+        }
+        ,
+        {
+          "prop": "code",
+          "label": "产品编号"
+        }
+        ,
+        {
+          "prop": "realCode",
+          "label": "真实编码"
+        }
+        ,
+        {
+          "prop": "codeName",
+          "label": "产品名称"
+        }
+        ,
+        {
+          "prop": "remark",
+          "label": "备注"
+        }
+        ]
+        }
+  ]
+}

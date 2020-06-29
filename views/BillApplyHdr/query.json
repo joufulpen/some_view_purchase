@@ -1,0 +1,103 @@
+{
+  "queryCondition": {
+    "formno": {
+      "value": "",
+      "mode": "相似",
+      "modeList": [],
+      "dataType": "string",
+      "fieldName": "formno",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "采购申请单号",
+      "form": "input"
+    },
+    "orderCode": {
+      "value": "",
+      "mode": "相似",
+      "modeList": [],
+      "dataType": "string",
+      "fieldName": "orderCode",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "关联订单号",
+      "form": "input"
+    },
+    "billDateTime": {
+      "value": ["",""],
+      "mode": "之间",
+      "modeList":[],
+      "dataType": "date",
+      "fieldName": "billDateTime",
+      "tableRelationMode": "AND",
+      "tableName":"[BillApplyHdr]",
+      "name": "申请时间",
+      "form": "date"
+    },
+     "checkState": {
+      "value": "待审核",
+      "mode": "等于",
+      "modeList": [ ],
+      "options":[{
+        "label":"待审核",
+        "value":"待审核"
+      },{
+        "label":"已审核",
+        "value":"已审核"
+      }],
+      "dataType": "string",
+      "fieldName": "checkState",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "状态",
+      "form": "select"
+    },
+    "purchaseReason": {
+      "value": "",
+      "mode": "不参与",
+      "modeList": [ ],
+      "prefix":"basic",
+      "api":"BaseProperty/GetList?condition=[%7B%22FieldName%22:%22Type%22,%22TableName%22:%22[BaseProperty]%22,%22Value%22:[%7B%22value%22:%22%E9%87%87%E8%B4%AD%E5%8E%9F%E5%9B%A0%22%7D],%22TableRelationMode%22:%22AND%22,%22Mode%22:%22%E7%AD%89%E4%BA%8E%22,%22DataType%22:%22string%22%7D]",
+      "options":[],
+      "dataType": "string",
+      "fieldName": "purchaseReason",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "采购原因",
+      "form": "select"
+    },
+    "Lister": {
+      "value": "",
+      "mode": "不参与",
+      "modeList": [ ],
+      "dataType": "string",
+      "fieldName": "Lister",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "申请人",
+      "form": "input"
+    },
+    "Checker": {
+      "value": "",
+      "mode": "不参与",
+      "modeList": [ ],
+      "dataType": "string",
+      "fieldName": "Checker",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "审核人",
+      "form": "input"
+    },
+   
+    "Remark": {
+      "value": "",
+      "mode": "不参与",
+      "modeList": [ ],
+      "dataType": "string",
+      "fieldName": "Remark",
+      "tableRelationMode": "AND",
+      "tableName": "[BillApplyHdr]",
+      "name": "备注",
+      "form": "input"
+    } 
+  }
+}

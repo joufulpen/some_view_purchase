@@ -1,0 +1,242 @@
+{
+  "apiName":"purchase",
+  "editDialogTitle": "供应商管理",
+  "width": "700px",
+  "labelWidth": "80px",
+  "formItems": {
+    "form": [
+      {
+        "type": "input",
+        "value": "",
+        "label": "供应商名称",
+        "name": "name",
+        "style": {
+          "width": "50%"
+        },
+         "rules":{
+           "required": true, 
+           "message": "请输入供应商名称",
+           "trigger": "blur" 
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "供应商简称",
+        "name": "shortName",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "法人代表",
+        "name": "representative",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "公司电话",
+        "name": "companyPhone",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "公司传真",
+        "name": "companyFex",
+        "style": {
+          "width": "100%"
+        }
+      },
+      {
+        "type": "select",
+        "options":[],
+        "value": "",
+        "label": "省份",
+        "name": "province",
+        "style": {
+          "width": "50%"
+        }
+      },{
+        "type": "select",
+        "value": "",
+        "options":[],
+        "label": "城市",
+        "name": "city",
+        "style": {
+          "width": "50%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "详细地址",
+        "name": "address",
+        "inputStyle":{
+          "width":"624px"
+        },
+        "style": {
+          "width": "100%"
+        }
+      },
+      {
+        "type": "select",
+        "options":[],
+        "prefix":"basic",
+        "api":"TypeofInvoice/GetList?condition=[]",
+        "value": "",
+        "label": "发票类型",
+        "name": "provideReceipt",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "税率",
+        "name": "cess",
+        "readonly":true,
+        "disabled":true,
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "select",
+        "value": "",
+        "options":[],
+        "label": "默认联系人",
+        "name": "defaultContactID",
+        "style": {
+          "width": "50%"
+        }
+      },{
+        "type": "select",
+        "value": "",
+        "options":[],
+        "label": "默认银行账户",
+        "name": "defaultBankAccountID",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "select",
+        "options":[],
+        "prefix":"basic",
+        "api":"Settlement/GetList?condition=[]",
+        "value": "",
+        "label": "结算方式",
+        "name": "payment",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "textarea",
+        "value": "",
+        "label": "备注",
+        "name": "description",
+        "inputStyle":{
+          "width":"624px"
+        },
+        "style": {
+          "width": "100%"
+        }
+     }
+    ]
+  },
+  "contactFormItems":{
+    "form":[{
+        "type": "input",
+        "value": "",
+        "label": "联系人姓名",
+        "name": "name",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "手机",
+        "name": "phone",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "电话",
+        "name": "telephone",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "QQ",
+        "name": "qq",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "邮箱",
+        "name": "mailbox",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "地址",
+        "name": "address",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "备注",
+        "name": "description",
+        "style": {
+          "width": "100%"
+        }
+      }]
+  },
+  "bankFormItems":{
+    "form":[{
+        "type": "input",
+        "value": "",
+        "label": "银行账户",
+        "name": "name",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "开户行",
+        "name": "bankName",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "银行地址",
+        "name": "address",
+        "style": {
+          "width": "100%"
+        }
+      }]
+  }
+}

@@ -1,0 +1,96 @@
+{
+	"queryCondition": {
+        "Formno": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Formno",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderHdr]",
+              "name": "采购订单号",
+              "form": "input"
+        }
+        ,
+      "createDate": {
+              "value": ["",""],
+              "mode": "之间",
+              "modeList":[],
+              "dataType": "date",
+              "fieldName": "createDate",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderHdr]",
+              "name": "创建日期",
+              "form": "date"
+        }
+        ,
+        "arrivalDate": {
+              "value": ["",""],
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "arrivalDate",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderHdr]",
+              "name": "计划到货日期",
+              "form": "date"
+        }
+        ,
+        "checkState": {
+              "value": "待审核",
+              "mode": "等于",
+              "modeList": [ ],
+              "options":[{
+                "label":"待审核",
+                "value":"待审核"
+              },{
+                "label":"已审核",
+                "value":"已审核"
+              },{
+                "label":"已完成",
+                "value":"已完成"
+              }],
+              "dataType": "string",
+              "fieldName": "checkState",
+              "tableRelationMode": "AND",
+              "tableName": "[BillPurOrderHdr]",
+              "name": "状态",
+              "form": "select"
+            },
+        "supplierID": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "supplierID",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderHdr]",
+              "name": "供应商名称",
+              "form": "input"
+        }
+        ,
+        "Lister": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Lister",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderHdr]",
+              "name": "制单人",
+              "form": "input"
+        }
+        ,
+        "description": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "description",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderHdr]",
+              "name": "备注",
+              "form": "input"
+        }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- title为变量 是模块的名字 -->
+  <title>供应商报价</title>
+    <script>
+      window.coolLocals={}
+      window.extraJsons = ['dtlTable.json']
+    </script>
+  <!-- <script src="../../scripts/cool-master/cool-master.js"></script> -->
+  <script src="/settings.js"></script>
+</head>
+
+<body>
+  <div id="root" v-cloak > 
+       <!--cool-single-view  cool-single-dialog  组件为固定组件 需模板生成-->
+     <cool-master-view ref="masterView" :unique-deploy-key="uniqueDeployKey" :axios-setting="axiosSetting" :dialogs="dialogs" :is-methods="isMethods" @table-row-click="tableRowClick" @table-row-dblclick="tableRowDblclick"  @table-select-change="tableSelectionChange"  @pagination-size-change="paginationSizeChange" @pagination-current-change="paginationCurrentChange" @get-condition="getCondition" @offer="offer" @looking="looking"></cool-master-view>
+
+      <cool-just-dialog  :title="editDialogTitle" :visible.sync="dialogVisible"  :width="dialogWidth" @closedialog="backEvent">
+        <template slot="dialogSlot">
+            <div style="border:1px solid #DCDFE6">
+                <el-tabs type="border-card" style="margin-bottom: 35px">
+            <el-tab-pane label="物料信息">
+                <cool-table-view :columns="columns" :data="materialTableData"  :stripe="stripe"></cool-table-view>
+                </el-tab-pane>
+          </el-tabs>  
+          <el-tabs type="border-card" >
+            <el-tab-pane label="供应商报价表">
+              <cool-button-group :buttons="buttons" @button-click="buttonClick"></cool-button-group>
+              <cool-table-view :columns="inColumns" :data="supplierTableData" :height="tableHeight" @table-row-click="outRowClick" @table-selection-change="outSelection" :stripe="stripe"></cool-table-view>
+            </el-tab-pane>
+          </el-tabs>
+            </div>       
+        </template>
+      </cool-just-dialog>
+      <!-- 编辑物料弹窗 -->
+      <cool-just-dialog ref="editDialog" :title="dialogTitle" :visible.sync="editDialogTitleVisible" :width="editDialogWidth" @save-event="tableSaveEvent" @back-event="tableBackEvent"  @closedialog="tableBackEvent" :show-save-button="showSaveButton">
+        <template slot="dialogSlot">
+            <div style="border:1px solid #DCDFE6">
+              <cool-form-view ref="formItems" :form-items="editDialogFormItems" @update-form='updateForm'  size="mini" :inline="true" label-width="100px"></cool-form-view>
+            </div>       
+        </template>
+      </cool-just-dialog>
+ <!--      <el-dialog ref="editDialog" :title="dialogTitle" :visible.sync="editDialogTitleVisible"  width="400px" :close-on-click-modal="false" @close="tableBackEvent">
+      <div style="border:1px solid #DCDFE6">
+        <cool-form-view ref="formItems" :form-items="editDialogFormItems" @update-form='updateForm'  size="mini" :inline="true" label-width="100px"></cool-form-view>
+      </div>       
+          <el-button size="mini" @click="tableBackEvent" style="border-top: none">取 消</el-button>
+          <el-button size="mini" @click="tableSaveEvent" style="float:right;border-top: none">确 认</el-button>
+      </el-dialog> -->
+  </div>
+</body>
+</html>

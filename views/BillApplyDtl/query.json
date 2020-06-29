@@ -1,0 +1,172 @@
+{
+	"queryCondition": {
+        "Sn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Sn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "单号",
+              "form": "input"
+        }
+        ,
+                "Formno": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Formno",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "父单号",
+              "form": "input"
+        }
+        ,
+                "Code": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Code",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "产品编号",
+              "form": "input"
+        }
+        ,
+                "RealCode": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "RealCode",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "真实编码",
+              "form": "input"
+        }
+        ,
+                "CodeName": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "CodeName",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "产品名称",
+              "form": "input"
+        }
+        ,
+                "Qty": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Qty",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "数量",
+              "form": "input"
+        }
+        ,
+                "Leave": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Leave",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "剩余量",
+              "form": "input"
+        }
+        ,
+                "Freeze": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Freeze",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "冻结量",
+              "form": "input"
+        }
+        ,
+                "SourceSn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "SourceSn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "源序列",
+              "form": "input"
+        }
+        ,
+                "ParentSn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "ParentSn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "父序列",
+              "form": "input"
+        }
+        ,
+                "Price": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Price",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "单价",
+              "form": "input"
+        }
+        ,
+                "Description": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Description",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "描述",
+              "form": "input"
+        }
+        ,
+                "ArrivalDate": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "ArrivalDate",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "预计到货日期",
+              "form": "input"
+        }
+        
+         ,     
+        "Remark": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Remark",
+              "tableRelationMode": "AND",
+              "tableName":"[BillApplyDtl]",
+              "name": "备注",
+              "form": "input"
+        }
+  }
+}

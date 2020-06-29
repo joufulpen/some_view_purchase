@@ -1,0 +1,99 @@
+{
+  "queryCondition": {
+        "Name": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Name",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "名称",
+              "form": "input"
+        }
+        ,
+        "ShortName": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "ShortName",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "简称",
+              "form": "input"
+        }
+        ,
+        "Contacts": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Contacts",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "联系人",
+              "form": "input"
+        }
+        ,
+        "Representative": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Representative",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "法人代表",
+              "form": "input"
+        }
+        ,
+        "Province": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Province",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "所在省份",
+              "form": "input"
+        }
+        ,
+        "City": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "City",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "所在城市",
+              "form": "input"
+        }
+        ,       
+        "Address": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Address",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "地址",
+              "form": "input"
+        }
+        ,
+        "Description": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "description",
+              "tableRelationMode": "AND",
+              "tableName":"[Supplier]",
+              "name": "备注",
+              "form": "input"
+        }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "queryCondition": {
+    "createDate": {
+      "value": ["", ""],
+      "mode": "之间",
+      "modeList": [],
+      "dataType": "date",
+      "fieldName": "createDate",
+      "tableRelationMode": "AND",
+      "tableName": "[InfoTable]",
+      "name": "时间",
+      "form": "date"
+    }
+  }
+}

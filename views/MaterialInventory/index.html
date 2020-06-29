@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- title为变量 是模块的名字 -->
+  <title>物料库存管理</title>
+  <style>
+    [v-cloak] {
+      display: none !important;
+    }
+
+    .el-table .danger-stockBalance {
+      color: #F56C6C;
+    }
+  </style>
+  <script>
+    window.coolLocals = {}
+  </script>
+  <script type="post-load" src="../libs/xlsx-populate-no-encryption.min.js"></script>
+  <script src="/settings.js"></script>
+
+</head>
+
+<body>
+  <div id="root" v-cloak>
+    <!--cool-single-view  cool-single-dialog  组件为固定组件 需模板生成-->
+    <cool-single-view ref="singleView" :unique-deploy-key="uniqueDeployKey" :axios-setting="axiosSetting" :dialogs="dialogs" :show-mode-list="showModeList" :is-methods="isMethods" @table-row-click="tableRowClick" @table-row-dblclick="tableRowDblclick"
+      @table-selection-change="tableSelectionChange" @pagination-size-change="paginationSizeChange" @pagination-current-change="paginationCurrentChange" @get-condition="getCondition"  @query-btn="searchData" @output="output" @store-change="storeChange"></cool-single-view>
+   <!--    <cool-just-dialog  :title="editDialogTitle" :visible.sync="dialogVisible"  :width="dialogWidth" @closedialog="backEvent">
+        <template slot="dialogSlot">
+            <div style="border:1px solid #DCDFE6">
+          <el-tabs type="border-card" >
+            <el-tab-pane label="物料库存变化">
+              <cool-table-view :columns="inColumns" :data="changeTableData" :height="tableHeight"></cool-table-view>
+            </el-tab-pane>
+          </el-tabs>
+            </div>       
+        </template>
+      </cool-just-dialog> -->
+  </div>
+</body>
+</html>

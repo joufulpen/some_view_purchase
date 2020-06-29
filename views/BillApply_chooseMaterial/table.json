@@ -1,0 +1,77 @@
+{
+	"singleTableData":{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "selection",
+          "showSelectable":true,
+          "justifyText":true,
+          "justifyProp":"alreadyChoose"
+        },{
+          "prop": "id",
+          "label": "物料编码"
+        }
+        ,
+        {
+          "prop": "name",
+          "label": "名称"
+        }
+        ,
+        {
+          "prop": "materialClass",
+          "label": "物料大类"
+        }
+        ,
+        {
+          "prop": "materialSubclass",
+          "label": "物料小类"
+        }
+        ,
+        {
+          "prop": "enName",
+          "label": "英文名"
+        }
+        ,
+        {
+          "prop": "byname",
+          "label": "别名"
+        }
+        ,
+        {
+          "prop": "specifications",
+          "label": "规格"
+        }
+        ,
+        {
+          "prop": "version",
+          "label": "品牌型号"
+        }
+        ,
+        {
+          "prop": "pigment",
+          "label": "颜色"
+        }
+        ,
+        {
+          "prop": "unit",
+          "label": "单位"
+        }
+        ,
+        {
+          "prop":"active",
+          "label":"是否启用",
+          "formatterName":"isActive"
+        },
+        {
+          "prop": "description",
+          "label": "备注"
+        }
+        ]
+  }
+}

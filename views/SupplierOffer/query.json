@@ -1,0 +1,103 @@
+{
+	"queryCondition": {
+        "Name": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Name",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "物料名称",
+              "form": "input"
+        }
+        ,
+        "materialClass": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "options":[],
+              "prefix":"basic",
+              "api":"TypeofMaterial/GetList?condition=[]&orderby=",
+              "dataType": "string",
+              "fieldName": "materialClass",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "物料大类",
+              "form": "select"
+        }
+        ,
+        "materialSubclass": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "options":[],
+              "dataType": "string",
+              "fieldName": "materialSubclass",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "物料小类",
+              "form": "select"
+        }
+        ,
+        "specifications": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "specifications",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "规格",
+              "form": "input"
+        }
+        ,
+        "brandModel": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "brandModel",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "型号",
+              "form": "input"
+        }
+        ,
+        "pigment": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "pigment",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "颜色",
+              "form": "input"
+        }
+        ,
+        "unit": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "unit",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "单位",
+              "form": "input"
+        }
+        ,       
+        "description": {
+              "value": ["",""],
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "description",
+              "tableRelationMode": "AND",
+              "tableName":"[Material]",
+              "name": "备注",
+              "form": "date"
+        }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "singleTableData":{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [
+        {
+          "type":"index"
+        },
+        {
+          "prop": "kind",
+          "label": "变化类型"
+        }
+        ,{
+          "prop": "formno",
+          "label": "对应单据号"
+        }
+        ,
+        {
+          "prop": "operator",
+          "label": "经手人"
+        }
+        ,
+        {
+          "prop": "operationDate",
+          "label": "时间",
+          "dateFormatter":true
+        },
+        {
+          "prop": "num",
+          "label": "数量"
+        }
+        ]
+        }
+  
+}

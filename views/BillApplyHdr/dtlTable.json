@@ -1,0 +1,66 @@
+{
+	"dtlTableData":[{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "name":"first",
+      "label":"采购申请单明细",
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "index",
+          "label":"序号",
+          "width":"50px"
+        },
+        {
+          "prop": "id",
+          "label": "物料编号"
+        }
+        ,
+        {
+          "prop": "name",
+          "label": "物料名称"
+        }
+        ,
+        {
+          "prop": "byname",
+          "label": "物料别名"
+        }
+        ,
+        {
+          "prop": "version",
+          "label": "品牌型号"
+        }
+        ,
+         {
+          "prop":"specifications",
+          "label":"物料规格"
+        },
+        {
+          "prop": "pigment",
+          "label": "物料颜色"
+        },
+        {
+          "prop": "unit",
+          "label": "采购单位"
+        },
+        {
+          "prop": "qty",
+          "label": "数量"
+        },
+        {
+          "prop": "arrivalDate",
+          "label": "预计到货时间",
+          "dateFormatter":true
+        },
+        {
+          "prop": "description",
+          "label": "备注(采购申请单明细备注)"
+        }
+        ]
+        }
+  ]
+}

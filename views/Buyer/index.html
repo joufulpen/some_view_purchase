@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- title为变量 是模块的名字 -->
+  <title>采购员管理</title>
+  <style>
+    [v-cloak] {
+      display: none !important;
+    }
+
+    .disabled-row {
+      background: #C0C4CC !important
+    }
+  </style>
+  <script>
+    window.coolLocals = {}
+  </script>
+  <script src="/settings.js"></script>
+</head>
+
+<body>
+  <div id="root" v-cloak>
+    <cool-single-view ref="singleView" :unique-deploy-key="uniqueDeployKey" :axios-setting="axiosSetting" :dialogs="dialogs" :is-methods="isMethods" @table-selection-change="tableSelectionChange" @table-row-click="tableRowClick" :show-mode-list="showModeList"
+      @choose-btn="getEmployeeData" @edit-btn="editBtn"></cool-single-view>
+
+    <!-- 选择采购员弹窗 -->
+    <cool-just-dialog :title="chooseDialogTitle" :visible.sync="chooseDialogVisible" :width="chooseDialogWidth" @save-event="chooseDialogSaveEvent" @back-event="chooseDialogBackEvent" @closedialog="chooseDialogBackEvent" :show-save-button="showSaveButton"
+      :save-btn-disabled="chooseDialogSaveDisabled" top="3vh">
+      <template slot="dialogSlot">
+        <el-container>
+          <el-header height="auto" style="margin-bottom:10px">
+            <el-row>
+              <el-col :span="2">
+                <span style="line-height:28px">员工列表</span>
+              </el-col>
+              <el-col :span="22">
+                <el-input size="mini" placeholder="模糊查询员工编号" v-model="fuzzyQueryId" style="width:300px"></el-input>
+                <el-input size="mini" placeholder="模糊查询姓名" v-model="fuzzyQueryName" style="width:300px"></el-input>
+                <el-button size="mini" icon="el-icon-search" @click="getEmployeeData">查询</el-button>
+              </el-col>
+            </el-row>
+          </el-header>
+          <el-main>
+            <cool-page-table ref="chooseTable" :data="chooseTableData" :columns="chooseTableColumns" :total="chooseTableTotal" :show-page="true" :stripe="false" border :highlight-current-row="false" :current-page.sync="chooseTableCurrent"
+              :page-size.sync="chooseTableOffset" @pagination-size-change="handleChooseTableSizeChange" @pagination-current-change="handleChooseTablePageChange" @table-select="chooseDialogSelection" :row-class-name="rowClassName"></cool-page-table>
+          </el-main>
+        </el-container>
+      </template>
+    </cool-just-dialog>
+
+    <!-- 编辑弹窗 -->
+    <cool-just-dialog :title="editDialogTitle" :visible.sync="editDialogVisible" :width="editDialogWidth" @save-event="editDialogSaveEvent" @back-event="editDialogBackEvent" @closedialog="editDialogBackEvent" :show-save-button="showSaveButton">
+      <template slot="dialogSlot">
+        <span style="font-size:16px;vertical-align: middle;font-weight:bold;padding-left:15px">基础信息</span>
+        <cool-form-view ref="formItems" :form-items="formItems" @update-form='updateForm' size="mini" :inline="true" label-width="140px"></cool-form-view>
+        <span style="font-size:16px;vertical-align: middle;font-weight:bold;padding-left:15px">附加信息</span>
+      </template>
+    </cool-just-dialog>
+  </div>
+</body>
+
+</html>

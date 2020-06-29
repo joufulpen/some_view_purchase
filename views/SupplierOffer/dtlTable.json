@@ -1,0 +1,49 @@
+{
+	"dtlTableData":[{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "label":"供应商报价明细",
+      "name":"first",
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "index"
+        },
+        {
+          "prop": "supplierName",
+          "label": "供应商名称"
+        }
+        ,
+        {
+          "prop": "price",
+          "label": "报价"
+        }
+        ,
+        {
+          "prop": "remark",
+          "label": "备注"
+        }
+        ,
+        {
+          "prop": "createName",
+          "label": "填报人"
+        }
+        ,
+        {
+          "prop": "createDate",
+          "label": "填报时间",
+          "dateFormatter":true        
+        }
+        ,
+        {
+          "prop": "active",
+          "label": "状态"
+        }
+        ]
+        }
+  ]
+}

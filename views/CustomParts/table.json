@@ -1,0 +1,70 @@
+{
+  "singleTableData": {
+    "cellStyle": {
+      "height": "30px",
+      "padding": "5px 0"
+    },
+    "data": [],
+    "total": 0,
+    "currentPage": 1,
+    "pageSize": 10,
+    "columns": [{
+        "type": "selection"
+      },
+      {
+        "prop": "id",
+        "label": "编码"
+      },
+      {
+          "prop": "name",
+          "label": "名称"
+        }
+        ,
+        {
+          "prop": "type",
+          "label": "类型"
+        }
+        ,
+        {
+          "prop": "techSheetNumber",
+          "label": "单号"
+        }
+        ,
+        {
+          "prop": "windowCode",
+          "label": "窗号"
+        }
+        ,
+        {
+          "prop": "width",
+          "label": "宽"
+        }
+        ,
+        {
+          "prop": "height",
+          "label": "高"
+        }
+        ,
+        {
+          "prop": "quantity",
+          "label": "数量"
+        }
+        ,
+        {
+          "prop": "unit",
+          "label": "单位"
+        }
+        ,
+        {
+          "prop": "area",
+          "label": "面积"
+        }
+        ,
+        {
+          "prop": "description",
+          "label": "备注"
+        }
+    ]
+  }
+
+}

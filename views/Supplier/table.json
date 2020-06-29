@@ -1,0 +1,90 @@
+{
+  "hdrTableData":{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "selection"
+        },
+        {
+          "prop": "name",
+          "label": "名称"
+        }
+        ,
+        {
+          "prop": "shortName",
+          "label": "简称"
+        }
+        ,
+        {
+          "prop": "representative",
+          "label": "法人代表"
+        }
+        ,
+        {
+          "prop": "companyPhone",
+          "label": "公司电话"
+        }
+        ,
+        {
+          "prop": "companyFex",
+          "label": "公司传真"     
+        }
+        ,
+
+        {
+          "prop": "fex",
+          "label": "联系人传真"
+        }
+        ,
+        {
+          "prop": "province",
+          "label": "所在省份"
+        }
+        ,
+        {
+          "prop": "city",
+          "label": "所在城市"
+        }
+        ,
+        {
+          "prop": "address",
+          "label": "地址"
+        }
+        ,
+        {
+          "prop": "provideReceipt",
+          "label": "提供发票"
+        }
+        ,
+        {
+          "prop": "cess",
+          "label": "税率"
+        }
+        ,
+        {
+          "prop": "payment",
+          "label": "结算方式"
+        }
+        ,{
+          "prop": "defaultContactName",
+          "label": "默认联系人"
+        }
+        ,{
+          "prop": "defaultBankAccountName",
+          "label": "默认银行账户"
+        }
+        ,
+        {
+          "prop": "description",
+          "label": "备注"
+        }
+        ]
+        }
+  
+}

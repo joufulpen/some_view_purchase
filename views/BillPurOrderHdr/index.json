@@ -1,0 +1,224 @@
+{
+  "apiName":"purchase",
+  "editDialogTitle": "xxxxDialog",
+  "width": "700px",
+  "labelWidth": "80px",
+    "editTableData": {
+    "showPage": false,
+    "height": "200px",
+    "columns": [
+      {
+        "prop": "index",
+        "label": "code"
+      },
+      {
+        "prop": "index",
+        "label": "price"
+      },
+      {
+        "prop": "index",
+        "label": "qty"
+      }
+    ],
+    "data": [ ]
+  },
+  "toolsFormItems": {
+    "form": [
+      {
+        "type": "input",
+        "value": "",
+        "label": "物品编码",
+        "inputStyle": {
+          "width": "150px",
+          "marginRight": "5px"
+        },
+        "name": "code"
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "单价",
+        "inputStyle":{"width":"78px","marginRight":"5px"},
+        "name": "price"
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "数量",
+        "inputStyle":{"width":"78px","marginRight":"5px"},
+        "name": "qty"
+      },
+      {
+        "type": "button",
+        "buttons": [
+          {
+            "text": "提交",
+            "size": "mini",
+            "disabled": true,
+            "key": "submit"
+          },
+          {
+            "text": "取消",
+            "size": "mini",
+            "disabled": true,
+            "key": "cancel"
+          },
+          {
+            "text": "删除",
+            "size": "mini",
+            "disabled": true,
+            "key": "delete"
+          }
+        ]
+      }
+    ]
+  },
+  "formItems": {
+    "form": [
+      {
+        "type": "input",
+        "value": "",
+        "label": "单号",
+        "name": "formno",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "pFormno",
+        "name": "pFormno",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "日期",
+        "name": "billDateTime",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "制单员",
+        "name": "lister",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "采购员",
+        "name": "buyer",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "采购员",
+        "name": "buyer",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "支付方式",
+        "name": "payment",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "审核状态",
+        "name": "checkState",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "审核员",
+        "name": "checker",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "审核日期",
+        "name": "checkDate",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "合同号",
+        "name": "contractNo",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "应付",
+        "name": "aPay",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "待付",
+        "name": "hPay",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "描述",
+        "name": "description",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "supplierID",
+        "name": "supplierID",
+        "style": {
+          "width": "50%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "表单名^当前表单的名称",
+        "name": "billName",
+        "style": {
+          "width": "50%"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "apiName":"purchase",
+  "editDialogTitle": "新增玻璃品类",
+  "width": "500px",
+  "labelWidth": "160px",
+    "formItems": {
+    "form": [
+      {
+        "type": "input",
+        "value": "",
+        "label": "项目名称",
+        "name": "projectName",
+        "style": {
+          "width": "100%"
+        }
+      },
+      {
+        "type": "input",
+        "value": "",
+        "label": "品类名称",
+        "name": "name",
+        "style": {
+          "width": "100%"
+        }
+      },{
+        "type": "input",
+        "value": "",
+        "label": "品类简称",
+        "name": "categoryReferred",
+        "style": {
+          "width": "100%"
+        }
+      },
+      {
+        "type": "select",
+        "options":[],
+        "prefix":"purchase",
+        "api":"Supplier/GetList?condition=[]",
+        "customValue":["id","name"],
+        "value": "",
+        "label": "供应商",
+        "name": "supplierID",
+        "style": {
+          "width": "100%"
+        },
+        "rules": {
+          "required": true,
+          "message": "供应商不能为空",
+          "trigger": "change"
+        }
+      },
+      {
+        "type": "inputNumber",
+        "value": "",
+        "label": "最大尺寸(高)",
+        "name": "height",
+        "inputStyle":{
+          "width":"193px"
+        },
+        "style": {
+          "width": "100%"
+        }
+      },
+      {
+        "type": "inputNumber",
+        "value": "",
+        "label": "最大尺寸(宽)",
+        "name": "width",
+        "inputStyle":{
+          "width":"193px"
+        },
+        "style": {
+          "width": "100%"
+        }
+      },
+      {
+        "type": "inputNumber",
+        "value": "",
+        "label": "单价",
+        "name": "price",
+        "inputStyle":{
+          "width":"193px"
+        },
+        "style": {
+          "width": "100%"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+	"queryCondition": {
+        "Sn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Sn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "序号",
+              "form": "input"
+        }
+        ,
+        "Formno": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Formno",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "单号",
+              "form": "input"
+        }
+        ,
+        "Code": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Code",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "物品编码",
+              "form": "input"
+        }
+        ,
+        "Price": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Price",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "单价",
+              "form": "input"
+        }
+        ,
+        "Qty": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Qty",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "数量",
+              "form": "input"
+        }
+        ,
+        "Leave": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Leave",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "剩余量",
+              "form": "input"
+        }
+        ,
+        "Freeze": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Freeze",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "冻结量",
+              "form": "input"
+        }
+        ,
+        "Tag": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Tag",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "冲减标记",
+              "form": "input"
+        }
+        ,
+        "RackNo": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "RackNo",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "货架号",
+              "form": "input"
+        }
+        ,
+        "Description": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Description",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "描述",
+              "form": "input"
+        }
+        ,
+        "ParentSn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "ParentSn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "上步骤序号",
+              "form": "input"
+        }
+        ,
+        "SourceSn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "SourceSn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "源步骤序号",
+              "form": "input"
+        }
+        ,
+        "TagSn": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "TagSn",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "冲减关联序号",
+              "form": "input"
+        }
+        ,
+        "RealCode": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "RealCode",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "正式物品编码",
+              "form": "input"
+        }
+        ,
+        "Remark": {
+              "value": "",
+              "mode": "不参与",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "Remark",
+              "tableRelationMode": "AND",
+              "tableName":"[BillPurOrderDtl]",
+              "name": "备注",
+              "form": "input"
+        }
+  }
+}

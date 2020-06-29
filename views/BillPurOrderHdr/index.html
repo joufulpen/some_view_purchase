@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- title为变量 是模块的名字 -->
+  <title>采购订单</title>
+  <style>
+    [v-cloak] {
+      display: none !important;
+    }
+  </style>
+  <script>
+    window.coolLocals={}
+      window.extraJsons = ['dtlTable.json','dialogForm.json']
+  </script>
+
+  <!-- <script>
+    if (!!window.ActiveXObject || "ActiveXObject" in window) document.getElementById('polyfill').src = document.getElementById('polyfill').getAttribute('pre-src')
+  </script> -->
+  <!-- <script src="../../scripts/cool-master/cool-master.js"></script> -->
+  <script src="/settings.js"></script>
+  <!--  <script id="polyfill" pre-src="http://198.168.1.110:21997/scripts/libs/polyfill.min.js" src="http://198.168.1.110:21997/scripts/libs/polyfill.min.js"></script> -->
+  <!-- <script src="http://198.168.1.110:21997/scripts/libs/cool-sti.js"></script> -->
+</head>
+
+<body>
+  <div id="root" v-cloak>
+    <!--cool-master-view  cool-master-dialog  组件为固定组件 需模板生成-->
+    <cool-master-view ref="masterView" :unique-deploy-key="uniqueDeployKey" :axios-setting="axiosSetting" :dialogs="dialogs" :show-mode-list="showModeList" :is-methods="isMethods" @table-row-click="tableRowClick" @table-row-dblclick="tableRowDblclick"
+      @pagination-size-change="paginationSizeChange" @pagination-current-change="paginationCurrentChange" @get-condition="getCondition" @custom-new="customNew" @custom-edit="customEdit" @button-click="buttonClick" @save-event="dialogSaveEvent"
+      @back-event="dialogBackEvent" @table-select-change="tableSelectionChange" @audit="audit" :show-dtl-table="showDtlTable" @finish="finish" @looking="looking" @check="check" @print="print" @new-delete="newDelete" @forced-end="forcedEnd" ></cool-master-view>
+    <!-- <cool-master-dialog :unique-key="uniqueKey" :visible.sync="dialogVisible" :is-methods="isDialogMethods"></cool-master-dialog> -->
+    <!-- 新增/编辑/查看采购弹窗 -->
+    <el-dialog ref="editDialog" :title="editDialogTitle" :visible.sync="dialogVisible" :close-on-click-modal="false" @close="backEvent" width="1200px" top="3vh">
+      <div style="border:1px solid #DCDFE6">
+        <div style="margin-bottom:15px" v-for="item in orderFormItems" :key="item.index">
+          <span style="font-size:16px;vertical-align: middle;font-weight:bold">{{item.title}}</span>
+          <el-button v-if="item.showChooseButton" size="mini" type="success" icon="el-icon-search" style="margin-left: 30px" @click="chooseSupplier" :disabled="isCheck">选择供应商</el-button>
+          <cool-form-view ref="coolForm" :form-items="item.formItems" size="mini" :inline="true" :label-width="labelWidth" @update-form="masterUpdateForm"></cool-form-view>
+        </div>
+        <el-tabs type="border-card">
+          <el-tab-pane label="采购物料列表">
+            <cool-button-group :buttons="buttons" @button-click="buttonClick"></cool-button-group>
+            <cool-table-view ref="tableView" :columns="columns" :data="inTableData" :height="tableHeight" @table-row-click="outRowClick" @table-selection-change="outSelection" :stripe="stripe" @table-row-dblclick="rowDblclick"></cool-table-view>
+          </el-tab-pane>
+        </el-tabs>
+      </div>
+      <div slot="footer">
+        <cool-save-button save-btn-text="保 存" back-btn-text="取 消" :save-btn-disabled="isCheck" @save-event="saveEvent" @back-event="backEvent"></cool-save-button>
+      </div>
+    </el-dialog>
+     <cool-quick-edit ref="quickEdit" :visible.sync="quickDialogVisible" :form-items="quickCoolFormItems" :width="dialogWidth" :label-width="labelWidth" :all-data="inTableData" :current-edit-data="currentEditData"></cool-quick-edit>
+  </div>
+</body>
+
+</html>

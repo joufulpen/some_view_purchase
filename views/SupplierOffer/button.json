@@ -1,0 +1,19 @@
+{
+  "buttons":[{
+        "text": "查询",
+        "size": "mini",
+        "icon": "#iconchaxun",
+        "disabled": false,
+        "controlDisable":"",
+        "key": "looking"
+      },
+      {
+        "text": "供应商报价",
+        "size": "mini",
+        "icon": "#iconbaojiadan",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "offer"
+      }
+      ]
+}

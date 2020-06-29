@@ -1,0 +1,102 @@
+{
+  "singleTableData": {
+    "cellStyle": {
+      "height": "30px",
+      "padding": "5px 0"
+    },
+    "data": [],
+    "total": 0,
+    "currentPage": 1,
+    "pageSize": 10,
+    "columns": [{
+        "type": "selection"
+      },
+      {
+        "prop": "id",
+        "label": "物料编码",
+        "width": "135px",
+        "fixed": "left"
+      },
+      {
+        "prop": "materialClass",
+        "label": "物料大类"
+      },
+      {
+        "prop": "materialSubclass",
+        "label": "物料小类"
+      }, {
+        "prop": "name",
+        "label": "物料名称"
+      },
+      {
+        "prop": "byname",
+        "label": "物料别名"
+      },
+      {
+        "prop": "enName",
+        "label": "英文名"
+      },
+      {
+        "prop": "version",
+        "label": "型号"
+      },
+      {
+        "prop": "specifications",
+        "label": "规格"
+      },
+      {
+        "prop": "pigment",
+        "label": "颜色"
+      },
+      {
+        "prop": "unit",
+        "label": "主单位"
+      },
+      {
+        "prop": "createByName",
+        "label": "创建人"
+      },
+      {
+        "prop": "createDate",
+        "label": "创建日期",
+        "dateFormatter": true
+      },
+      {
+        "prop": "stockKeepingUnit",
+        "label": "库存单位",
+        "fixed": "right"
+      },
+      {
+        "prop": "num",
+        "label": "库存数量",
+        "fixed": "right"
+      },
+      {
+        "prop": "safetyStock",
+        "label": "安全库存",
+        "fixed": "right"
+      },{
+        "prop": "description",
+        "label": "备注",
+        "fixed": "right"
+      }
+    ]
+  },
+  "备用": [{
+      "prop": "repertoryUnit",
+      "label": "库存单位",
+      "fixed": "right"
+    },
+    {
+      "prop": "stockBalance",
+      "label": "库存数量",
+      "fixed": "right"
+    },
+    {
+      "prop": "safeStock",
+      "label": "安全库存",
+      "fixed": "right"
+    }
+  ]
+
+}

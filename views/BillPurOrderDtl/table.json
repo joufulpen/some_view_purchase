@@ -1,0 +1,91 @@
+{
+	"dtlTableData":[{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "selection"
+        },
+        {
+          "prop": "sn",
+          "label": "序号"
+        }
+        ,
+        {
+          "prop": "formno",
+          "label": "单号"
+        }
+        ,
+        {
+          "prop": "code",
+          "label": "物品编码"
+        }
+        ,
+        {
+          "prop": "price",
+          "label": "单价"
+        }
+        ,
+        {
+          "prop": "qty",
+          "label": "数量"
+        }
+        ,
+        {
+          "prop": "leave",
+          "label": "剩余量"
+        }
+        ,
+        {
+          "prop": "freeze",
+          "label": "冻结量"
+        }
+        ,
+        {
+          "prop": "tag",
+          "label": "冲减标记"
+        }
+        ,
+        {
+          "prop": "rackNo",
+          "label": "货架号"
+        }
+        ,
+        {
+          "prop": "description",
+          "label": "描述"
+        }
+        ,
+        {
+          "prop": "parentSn",
+          "label": "上步骤序号"
+        }
+        ,
+        {
+          "prop": "sourceSn",
+          "label": "源步骤序号"
+        }
+        ,
+        {
+          "prop": "tagSn",
+          "label": "冲减关联序号"
+        }
+        ,
+        {
+          "prop": "realCode",
+          "label": "正式物品编码"
+        }
+        ,
+        {
+          "prop": "remark",
+          "label": "备注"
+        }
+        ]
+        }
+  ]
+}

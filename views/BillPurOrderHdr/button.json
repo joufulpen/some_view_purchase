@@ -1,0 +1,77 @@
+{
+  "buttons":[{
+        "text": "查询",
+        "size": "mini",
+        "icon": "#iconchaxun",
+        "disabled": false,
+        "controlDisable":"",
+        "key": "looking"
+      },{
+        "text": "查看",
+        "size": "mini",
+        "icon": "#iconchakan",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "check"
+      },
+      {
+        "text": "新增",
+        "size": "mini",
+        "icon": "#iconxinzeng",
+        "disabled": false,
+        "controlDisable":"",
+        "key": "custom-new"
+      },
+      {
+        "text": "编辑",
+        "size": "mini",
+        "icon": "#iconERP_bianji",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "custom-edit",
+        "checkState":"1"
+      },
+      {
+        "text": "删除",
+        "size": "mini",
+        "icon": "#iconERP_shanchu",
+        "disabled": true,
+        "controlDisable":"single",
+        "key": "new-delete",
+        "checkState":"1"
+      },
+      {
+        "text": "审核",
+        "size": "mini",
+        "icon": "#iconshenhe",
+        "disabled": true,
+        "controlDisable":"single",
+        "key":"audit",
+        "checkState":"1"
+      },{
+        "text": "手动完成",
+        "size": "mini",
+        "icon": "#iconshoudong",
+        "disabled": true,
+        "controlDisable":"single",
+        "key":"finish",
+        "checkState":"2"
+      },{
+        "text": "作废",
+        "size": "mini",
+        "icon": "#icontuihui",
+        "disabled": true,
+        "controlDisable":"single",
+        "key":"forced-end",
+        "checkState":"2"
+      },{
+        "text": "打印",
+        "size": "mini",
+        "icon": "#icondayin",
+        "disabled": true,
+        "controlDisable":"single",
+        "key":"print",
+        "checkState":"1"
+      }
+      ]
+}

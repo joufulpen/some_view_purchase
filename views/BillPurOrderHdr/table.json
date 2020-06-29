@@ -1,0 +1,53 @@
+{
+	"hdrTableData":{
+      "cellStyle": {
+        "height": "30px",
+        "padding": "5px 0"
+        },
+      "data": [],
+      "total": 0,
+      "defaultSort":{"prop": "createDate", "order": "descending"},
+      "currentPage": 1,
+      "pageSize": 10,
+      "columns": [{
+          "type": "selection"
+        },
+        {
+          "prop": "formno",
+          "label": "采购订单号"
+        }
+        ,
+        {
+          "prop": "supplierName",
+          "label": "供应商名称"
+        }
+        ,{
+          "prop": "listerName",
+          "label": "制单人"
+        }
+        ,
+        {
+          "prop": "createDate",
+          "label": "创建日期",
+          "dateFormatter":true
+        }
+        ,
+        {
+          "prop": "arrivalDate",
+          "label": "计划到货日期",
+          "dateFormatter":true
+        }
+        ,
+        {
+          "prop": "checkState",
+          "label": "采购订单状态"
+        }
+        ,
+        {
+          "prop": "description",
+          "label": "备注"
+        }
+        ]
+        }
+  
+}

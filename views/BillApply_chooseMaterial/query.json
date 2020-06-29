@@ -1,0 +1,104 @@
+{
+  "queryCondition": {
+        "id": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "id",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "物料编码",
+              "form": "input"
+        }
+        ,
+        "name": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "name",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "名称",
+              "form": "input"
+        }
+        ,
+        "materialClass": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "options":[],
+              "prefix":"basic",
+              "api":"TypeofMaterial/GetList?condition=[]&orderby=",
+              "dataType": "string",
+              "fieldName": "materialClass",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "物料大类",
+              "form": "select"
+        }
+        ,
+        "materialSubclass": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "options":[],
+              "dataType": "string",
+              "fieldName": "materialSubclass",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "物料小类",
+              "form": "select"
+        }
+        ,
+        "specifications": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "specifications",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "规格",
+              "form": "input"
+        }
+        ,
+        "brandModel": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "brandModel",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "品牌型号",
+              "form": "input"
+        }
+                ,        
+        "pigment": {
+              "value": "",
+              "mode": "相似",
+              "modeList":[],
+              "dataType": "string",
+              "fieldName": "pigment",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "颜色",
+              "form": "input"
+        },
+        "Active": {
+              "value": true,
+              "mode": "等于",
+              "modeList":[],
+              "activeText":"启用",
+              "inactiveText":"禁用",
+              "dataType": "boolean",
+              "fieldName": "active",
+              "tableRelationMode": "AND",
+              "tableName":"[Goods_Pur]",
+              "name": "状态",
+              "form": "switch"
+        }
+  }
+}

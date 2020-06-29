@@ -1,0 +1,50 @@
+{
+  "hdrTableData": {
+    "cellStyle": {
+      "height": "30px",
+      "padding": "5px 0"
+    },
+    "data": [ ],
+    "total": 0,
+    "currentPage": 1,
+    "pageSize": 10,
+    "columns": [
+      {
+        "type": "selection",
+        "showSelectable":true,
+        "justifyText":"已审核",
+        "justifyProp":"checkState"
+      },
+      {
+        "type": "index",
+        "label": "序号",
+        "width":"50px"
+      },
+      {
+        "prop": "formno",
+        "label": "采购申请单号"
+      },{
+        "prop": "orderCode",
+        "label": "关联订单号"
+      },{
+        "prop": "purchaseReason",
+        "label": "采购原因"
+      },{
+        "prop": "listerName",
+        "label": "申请人"
+      },{
+        "prop": "billDateTime",
+        "label": "申请时间",
+        "dateFormatter":true
+      },{
+        "prop": "checkState",
+        "label": "状态"
+      },
+      {
+        "prop": "description",
+        "label": "备注"
+      }
+    ]
+  }
+
+}

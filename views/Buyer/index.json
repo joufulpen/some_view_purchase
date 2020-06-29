@@ -1,0 +1,78 @@
+{
+  "apiName":"purchase",
+  "formItems": {
+    "form": [{
+        "type": "input",
+        "value": "",
+        "label": "员工编号",
+        "name": "id",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "名称",
+        "name": "name",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "性别",
+        "name": "sex",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "民族",
+        "name": "nation",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "部门",
+        "name": "departmentName",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "职位",
+        "name": "position",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "手机",
+        "name": "phone",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "input",
+        "value": "",
+        "label": "邮箱",
+        "name": "email",
+        "disabled": true,
+        "inputStyle": "width:193px",
+        "style": ""
+      },{
+        "type": "textarea",
+        "value": "",
+        "label": "备注",
+        "name": "description",
+        "disabled": true,
+        "inputStyle": "width:527px",
+        "style": "width:100%"
+      }]
+  }
+}
